@@ -23,7 +23,7 @@ mean,na.rm=TRUE)
 ## What is mean total number of steps taken per day?
 1. Make a histogram of **total number of steps per day**
 ```{r}
-hist(StepsSum,col="blue",xlab="Total Number of Steps Taken per Day",
+histogram(StepsSum,col="blue",xlab="Total Number of Steps Taken per Day",
 ylab="Frequency", main="Histogram of Total Number of Steps taken per day")
 ```  
 
@@ -78,7 +78,7 @@ StepsTot <- tapply(actdata$steps, actdata$date,sum)
 
 4. Make a histogram of the total number of steps taken each day and Calculate and report the **mean** and **median** total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 ```{r}
-hist(StepsTot,col="red",xlab="Total Steps per Day",
+histogram(StepsTot,col="red",xlab="Total Steps per Day",
 ylab="Frequency", main="Histogram of Total Steps taken per day")
 ```
 ```{r}
